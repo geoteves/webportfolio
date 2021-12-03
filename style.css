@@ -1,0 +1,132 @@
+/* Import Fonts */
+/* Titillium Web */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@300&family=Titillium+Web:wght@300;600&display=swap');
+/* Comforter Brush */
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Comforter+Brush&family=Open+Sans&display=swap');
+
+
+/* Overwriting the Defaults */
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+    background: var(--white-color);
+    font-family: var(--base-font-family);
+}
+ .logo-image{
+    width: 230px;
+    height: 215px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: -85px;
+}
+
+.navbar {
+ width: 100%;
+ height: 80px;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ position:fixed;
+ top:0;
+ z-index: 1030; /* to prevent the navbar getting covered up by other content */
+}
+
+.hero {
+   background-image: url('./images/bgimage.jpg');
+   background-size: cover;
+   background-position: top;
+   background-repeat: no-repeat;
+   vertical-align: middle;
+   min-height: 100vh;
+   position: relative;
+   font-size: 100px;
+}
+
+#about-me {
+   padding-top: 100px;
+   padding-bottom: 100px;
+}
+
+.profilepic {
+   border-radius: 50%;
+   padding-top: 150px;
+   padding-bottom: 100px;
+   filter: grayscale(100%);
+}
+
+.carousel-inner {
+   color: black;
+}
+/*---------------------------------------
+     CONTACT              
+  -----------------------------------------*/
+
+  .webform input,
+  button#submit-button {
+     height: calc(2.25rem + 20px);
+  }
+
+  .form-control {
+     border-radius: var(--border-radius-small);
+     margin: 1.5rem 0;
+  }
+
+  .form-control:focus {
+     box-shadow: none;
+     border-color: var(--dark-color);
+  }
+
+  #submit-button {
+     background: var(--dark-color);
+     border-color: transparent;
+     color: var(--white-color);
+     cursor: pointer;
+     transition: all 0.3s ease;
+  }
+
+  #submit-button:hover {
+     background: var(--primary-color);
+  }
+
+  .contact h2 + p {
+     max-width: 90%;
+  }
+
+  .google-map {
+     border-top: 1px solid #efebeb;
+     margin-top: 1.5rem;
+     padding-top: 1.5rem;
+  }
+
+  .google-map iframe {
+     width: 100%;
+  }
+
+.about-contact {
+   background-color: #e7e7e7; color: black;}
+
+#header2 {
+   font-size: 30px;
+   color: whitesmoke;
+   font-weight: bold;
+}
+
+#about {
+   background-color: dimgray;
+}
+
+.hero-text {
+   align-items: flex-end;
+}
+
+#name-font {
+    width: 200px;
+    height: 100px;
+    margin: -200px;
+}
